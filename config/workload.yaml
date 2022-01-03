@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: tjwa22
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: tjwa22
+spec:
+  source:
+    git:
+      url: https://github.com/sample-accelerators/tjwa22
+      ref:
+        branch: main
